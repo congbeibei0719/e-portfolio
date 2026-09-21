@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beibei Cong — Resume</title>
+  <meta name="description" content="The resume of Beibei Cong — experience, education, and skills." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-dot">B</span>
+        Beibei Cong
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="nav-cta">Contact Me</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Page header ===== -->
+    <section class="page-header">
+      <div class="container">
+        <span class="section-eyebrow">My journey so far</span>
+        <h1>Resume</h1>
+        <p>A snapshot of where I've worked, what I've studied, and the tools I love using along the way.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="grid grid-2">
+          <!-- Experience -->
+          <div class="card reveal">
+            <h2 class="section-title" style="font-size:1.5rem; margin-bottom:24px;">💼 Experience</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-meta">
+                  <span class="tag">2023 — Now</span>
+                  <span class="tag">Remote</span>
+                </div>
+                <h3>Senior Frontend Engineer</h3>
+                <p style="font-weight:600; color:var(--coral-dark); margin-bottom:6px;">Brightwave Studio</p>
+                <p>Lead a small team building accessible, design-driven web apps. Shipped a component library used across 6 products and mentored two junior devs.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-meta">
+                  <span class="tag">2021 — 2023</span>
+                </div>
+                <h3>Frontend Engineer</h3>
+                <p style="font-weight:600; color:var(--coral-dark); margin-bottom:6px;">Nimbus Labs</p>
+                <p>Built delightful dashboards and onboarding flows. Cut page load times by 40% and grew the design system from scratch.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-meta">
+                  <span class="tag">2020 — 2021</span>
+                </div>
+                <h3>Web Developer (Intern)</h3>
+                <p style="font-weight:600; color:var(--coral-dark); margin-bottom:6px;">Littleleaf Co.</p>
+                <p>First taste of real product work — turned Figma designs into responsive pages and fell in love with the craft.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education + Skills -->
+          <div style="display:flex; flex-direction:column; gap:26px;">
+            <div class="card reveal">
+              <h2 class="section-title" style="font-size:1.5rem; margin-bottom:24px;">🎓 Education</h2>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-meta">
+                    <span class="tag">2016 — 2020</span>
+                  </div>
+                  <h3>B.S. in Computer Science</h3>
+                  <p style="font-weight:600; color:var(--coral-dark); margin-bottom:6px;">State University</p>
+                  <p>Focus on human-computer interaction and web systems. Graduated with honors.</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-meta">
+                    <span class="tag">Ongoing</span>
+                  </div>
+                  <h3>Always learning</h3>
+                  <p style="font-weight:600; color:var(--coral-dark); margin-bottom:6px;">Books, side projects, community</p>
+                  <p>Curiosity is the best teacher — I keep a running list of things I want to understand next.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card reveal">
+              <h2 class="section-title" style="font-size:1.5rem; margin-bottom:20px;">🧰 Skills</h2>
+              <div class="skills-wrap">
+                <span class="chip">JavaScript</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">React</span>
+                <span class="chip">Vue</span>
+                <span class="chip">CSS / Sass</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">Accessibility</span>
+                <span class="chip">Design Systems</span>
+                <span class="chip">Figma</span>
+                <span class="chip">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="center" style="margin-top:40px;">
+          <a href="contact.html" class="btn btn-primary">Let's work together →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="funfact">
+          <div class="label">Fun fact about me</div>
+          <div class="text">
+            My first "website" was a fan page for a local bakery — built entirely in a single HTML file at age 13. 🥐
+          </div>
+        </div>
+        <nav class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="resume.html">Resume</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year"></span> Beibei Cong · Made with warmth &amp; coffee.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
